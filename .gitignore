@@ -46,3 +46,7 @@ htmlcov/
 output.wav
 
 .github/
+
+
+#Ignore cursor AI rules
+.cursor/rules/codacy.mdc

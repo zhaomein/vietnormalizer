@@ -213,7 +213,7 @@ MIT License
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+Contributions are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for a short guide (fork, quick wins like fixing typos, and how to open a Pull Request).
 
 ## Acknowledgments
 
