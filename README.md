@@ -207,6 +207,10 @@ The normalization follows this pipeline (matching [nghitts](https://github.com/n
 - Python 3.8+
 - No external dependencies (uses only standard library)
 
+## Publishing
+
+To release a new version to PyPI, see [docs/publish-to-pypi.md](docs/publish-to-pypi.md). Quick path: bump version in `pyproject.toml`, `setup.py`, and `vietnormalizer/__init__.py`, then run `./scripts/publish-to-pypi.sh`.
+
 ## License
 
 MIT License

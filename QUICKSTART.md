@@ -40,3 +40,7 @@
   ```bash
   python test_normalizer.py
   ```
+
+## Releasing to PyPI
+
+To publish a new version, see [docs/publish-to-pypi.md](docs/publish-to-pypi.md) and run `./scripts/publish-to-pypi.sh` from the repo root.
