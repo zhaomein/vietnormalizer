@@ -404,7 +404,7 @@ class VietnameseTextProcessor:
         def replace_full_date(match):
             day, month, year = match.group(1), match.group(2), match.group(3)
             if is_valid_date(day, month, year):
-                return f"ngày {self.number_to_words(day)} tháng {self.number_to_words(month)} năm {self.number_to_words(year)}"
+                return f"{self.number_to_words(day)} tháng {self.number_to_words(month)} năm {self.number_to_words(year)}"
             return match.group(0)
         text = self.date_full_pattern.sub(replace_full_date, text)
         
