@@ -428,7 +428,7 @@ class VietnameseTextProcessor:
         def replace_x_thang_y(match):
             day, month = match.group(1), match.group(2)
             if is_valid_date(day, month):
-                return f"ngày {self.number_to_words(day)} tháng {self.number_to_words(month)}"
+                return f"{self.number_to_words(day)} tháng {self.number_to_words(month)}"
             return match.group(0)
         text = self.date_x_thang_y_pattern.sub(replace_x_thang_y, text)
         
@@ -441,13 +441,13 @@ class VietnameseTextProcessor:
         text = self.date_thang_x_pattern.sub(replace_thang_x, text)
         
         # ngày X
-        # def replace_ngay_x(match):
-        #     day = match.group(1)
-        #     d = int(day)
-        #     if 1 <= d <= 31:
-        #         return 'ngày ' +self.number_to_words(day)
-        #     return match.group(0)
-        # text = self.date_ngay_x_pattern.sub(replace_ngay_x, text)
+        def replace_ngay_x(match):
+            day = match.group(1)
+            d = int(day)
+            if 1 <= d <= 31:
+                return 'ngày ' +self.number_to_words(day)
+            return match.group(0)
+        text = self.date_ngay_x_pattern.sub(replace_ngay_x, text)
         
         return text
     
